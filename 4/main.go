@@ -22,10 +22,6 @@ func anagram(input []string) [][]string {
 		result = append(result, arrWord)
 	}
 
-	sort.Slice(result, func(i, j int) bool {
-        return len(result[i]) > len(result[j])
-    })
-
 	return result
 }
 
